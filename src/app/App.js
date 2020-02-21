@@ -10,9 +10,7 @@ import Pagination from "./components/Pagination";
 
 class App extends Component {
 
-  constructor() {
-    super();
-    this.state = {
+ state = {
       movies: [],
       searchTerm: '',
       totalResults: 0,
@@ -20,10 +18,9 @@ class App extends Component {
 
     }
 
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
 
-  }
+
+  
 
 
   handleSubmit = (e) => {
